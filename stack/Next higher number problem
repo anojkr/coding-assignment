@@ -1,6 +1,9 @@
-Tuntun mausi challenged Bheem and his team to solve a problem. Raju, Chutki and Bheem are trying to solve this problem but are unable to do so. As you are a good friend of Raju, he asks for your help.
+Tuntun mausi challenged Bheem and his team to solve a problem. Raju, Chutki and Bheem are trying 
+to solve this problem but are unable to do so. As you are a good friend of Raju, he asks for your help.
 
-Given an array, For each element find the value of nearest element to the right which is having frequency greater than as that of current element. If there does not exist an answer for a position, then print '-1'
+Given an array, For each element find the value of nearest element to the right which is having
+frequency greater than as that of current element. If there does not exist an answer for a position,
+then print '-1'
 
 Please help Raju and his team to solve this problem to get the Laddus.
 
