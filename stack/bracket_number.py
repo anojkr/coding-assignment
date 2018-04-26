@@ -2,8 +2,7 @@
 
 T = int(input())
 for _ in range(T):
-		N = input().split()
-		#print(N)
+		N = input().strip()
 		stack = []
 		l = []
 		c = 0

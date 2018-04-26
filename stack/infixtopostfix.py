@@ -1,6 +1,5 @@
 #Infix to postfix expression
 # https://practice.geeksforgeeks.org/problems/infix-to-postfix/0
-import re
 
 T = int(input())
 opr = {
@@ -11,12 +10,11 @@ opr = {
 	'-'	:	1,
 	'(' :	0,
 	')'	:	0,
-	'?' : 	0
+	'?' : 	0,
 }
 
 stack = ['?']
 postfix= []
-
 for _ in range(T):
 	N = input().split()
 	for token in N:
@@ -36,7 +34,5 @@ for _ in range(T):
 
 	while len(stack)>0:
 		postfix.append(stack.pop())
-
-
 str1 = ' '.join(str(e) for e in postfix)
 print(str1)
