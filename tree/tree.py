@@ -7,9 +7,8 @@ class Node:
 		self.right 	= None
 		self.parent	= None
 
-
 class Binary_Search_Tree:
-	r = []
+
 	def __init__(self, data):
 		self.data 	= data
 		self.left 	= None
@@ -57,10 +56,11 @@ class Binary_Search_Tree:
 		else:
 			pass
 
-
 	def delete_node(self, root, data):
 		node = self.search_node(root, data)
-		if node.left == None and node.right==None:
+		if node ==	None:
+			print("Element not exist")
+		elif node.left == None and node.right==None:
 			if node.parent.data>=node.data:
 				node.parent.left 	=	None
 			else: 
@@ -112,22 +112,30 @@ class Binary_Search_Tree:
 		elif type == 'preorder':
 			return self.preorder_treversal(root, r)
 
+	def no_of_leaves_bst(self, root):
+		node = root
+		if node == None:
+			return 0
+		elif node.left == None and node.right == None:
+			return 1
+		else:
+			return self.no_of_leaves_bst(node.left) + self.no_of_leaves_bst(node.right)
+
+	def no_of_fullnode(self, root):
+		node = root
+		if node == None:
+			return 0
+		elif node.left != None and node.right != None:
+			return 1 + self.no_of_fullnode(node.left) + self.no_of_fullnode(node.right)
+		else:
+			return 0
+
 b = Binary_Search_Tree(50)
 b.insert_node(b,30,70,20,40,60,80,15,25,35,45,55,65,75,85)
 print(b.traversal('inorder', b))
 print(b.traversal('preorder', b))
 print(b.traversal('postorder', b))
-
-b.delete_node(b,30)
-print("\n")
-print(b.traversal('inorder', b))
-print(b.traversal('preorder', b))
-print(b.traversal('postorder', b))
-
-
-b.delete_node(b,40)
-print("\n")
-print(b.traversal('inorder', b))
-print(b.traversal('preorder', b))
-print(b.traversal('postorder', b))
+b.delete_node(b,5)
+print(b.no_of_leaves_bst(b))
+print(b.no_of_fullnode(b))
 
