@@ -13,22 +13,41 @@ def heapify(list, i):
 
 
 def build_heap(list):
-    list.insert(0, [-5, -6])
+    list.insert(0, 0)
     index = len(list) // 2
     while index != -1:
         heapify(list, index)
         index -= 1
+    list.pop(0)
 
 
 def decrease_key(list, index, value):
-    list.insert(0, [-5, -6])
+    list.insert(0, 0)
     i = index
-    if value > list[i][0]:
+    if value > list[i]:
         print("Error")
-    list[i][0] = value
-    while i > 1 and list[i // 2][0] > list[i][0]:
-        list[i][0], list[i // 2][0] = list[i // 2][0], list[i][0]
-        list[i][1], list[i // 2][1] = list[i // 2][1], list[i][1]
+    list[i] = value
+    while (i > 1 and list[i // 2] > list[i]):
+        list[i], list[i // 2] = list[i // 2], list[i]
         i = i // 2
     list.pop(0)
-    return list
+
+
+def heap_sort(list):
+    build_heap(list)
+    list.insert(0, 0)
+    i = len(list)
+    r = []
+    while i > 1:
+        list[1], list[i - 1] = list[i - 1], list[1]
+        i = i - 1
+        r.append(list.pop())
+        heapify(list, 1)
+    list.pop(0)
+    print(r)
+    return r
+
+
+l = [101, 50, 60, 80, 70, 65, 40, 25, 15, 16, 19, 5, 8]
+
+heap_sort(l)
