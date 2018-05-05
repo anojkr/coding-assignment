@@ -1,13 +1,12 @@
 def insertion_sort(list, n):
-	for t in range(0,n):
-		temp = list[t]
-		j = t
+    for t in range(0, n):
+        temp = list[t]
+        j = t
+        while j > 0 and temp < list[j - 1]:
+            list[j] = list[j - 1]
+            j = j - 1
+        list[j] = temp
 
-		while j>0 and temp<list[j-1]:
-			list[j] = list[j-1]
-			j=j-1
-
-		list[j] = temp
 
 def run():
     n = int(input())
@@ -16,5 +15,6 @@ def run():
     l = [str(i) for i in l]
     s = " ".join(l)
     print(s)
+
 
 run()
