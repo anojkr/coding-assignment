@@ -21,6 +21,11 @@ class MST:
                 r.append((t, s[0], s[1]))
         return r
 
+    def cost_length(self, u, v, graph):
+        for t in graph[u]:
+            if t[0] == v:
+                return t[1]
+
     def print_mst_node(self, dict, edge_weight, mst):
         keys = sorted(dict.keys())
         print("\nPrism algo to find Minimum spanning tree \n")
@@ -28,7 +33,7 @@ class MST:
         for d in keys:
             print("{}-->{} = {}".format(dict[d], d, edge_weight[d]))
 
-    def prism(self, graph, start, cost, directed=False):
+    def prism(self, graph, start, directed=False):
         mst = 0
         key = {}  # Vertice - edge_weight btw parent/source to chid current node and parent of current node
         parent = {}
@@ -43,14 +48,14 @@ class MST:
         while len(Q) != 0:
             u = heapq.heappop(Q)
             for v in graph[u[1]]:
-                if [key[v[0]], v[0]] in Q and cost[u[1] - 1][v[0] - 1] < key[v[0]]:
+                cost = self.cost_length(u[1],v[0], graph)
+                if [key[v[0]], v[0]] in Q and cost < key[v[0]]:
                     parent[v[0]] = u[1]  # set parent of current node
                     idx = Q.index([key[v[0]], v[0]])
-                    key[v[0]] = cost[u[1] - 1][v[0] - 1]  # set key value for node
+                    key[v[0]] = cost  # set key value for node
                     # for decrease key always give idx+1
-                    z = cost[u[1] - 1][v[0] - 1]
                     Q = heap.decrease_key(Q, idx + 1,
-                                          z)  # here index pass as parameter with +1 because heap implemented with starting index 1.
+                                          cost)  # here index pass as parameter with +1 because heap implemented with starting index 1.
             mst = mst + u[0]
         self.print_mst_node(parent, key, mst)
         return mst
