@@ -1,3 +1,26 @@
+
+"""
+Application of Breadth first search
+
+1.  It can be used to find minimum cost spanning tree in undirected/ same weighted graph.
+
+2.  It can be used to check graph is bi-partile or not
+
+Application of Depth first search
+
+1.  It can be used to detect cycle in directed/undirected
+    graph. {If there is back-edge in graph then cycle exist in graph}
+
+2.  For unweighted/Same weighted grah dfs can be used to find
+    minimum cos spanning tree and all pair shortest path {path is measured
+    in term of number of edges btw source node and destination node.}
+
+3.  Dfs can be used to find topological sorting in Directed Acyclic Graph.
+
+4.  It can be used to detech graph is bi-partile of not.
+
+"""
+
 class Traversal:
 
     def best_first_search(self, start, graph):
