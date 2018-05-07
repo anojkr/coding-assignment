@@ -9,7 +9,7 @@ def length(u, v, graph):
 
 
 def print_result(dist, parent, name):
-    print("\n Result single source shortest path using {} \n{} \n{}".format(name, dist, parent))
+    print("\n Result single source shortest path using {} \n{} \n{}\n".format(name, dist, parent))
 
 def relax_operation(Q, alt, source, nbr, dist, prev):
         if alt < dist[nbr[0]]:

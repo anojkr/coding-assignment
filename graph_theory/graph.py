@@ -1,4 +1,4 @@
-class Graph:
+class Create_Graph:
 
     def __init__(self, list, directed=False):
         self.graph = dict()
@@ -8,6 +8,7 @@ class Graph:
                 l.append((k[1], k[0], k[2]))
         for k in l:
             self.graph[k[0]] = []
+            self.graph[k[1]] = []
         [self.graph[k[0]].append((k[1], k[2])) for k in l]
         print(self.graph)
 
@@ -30,7 +31,7 @@ if __name__ == '__main__':
     # cost = [[0, 2, 0, 6, 0],[2, 0, 3, 8, 5],[0, 3, 0, 0, 7],[6, 8, 0, 0, 9],[0, 5, 7, 9, 0]]
     l = [(1, 2, 9), (1, 3, 12), (2, 3, 8), (2, 4, 4), (2, 5, 7), (3, 5, 5), (3, 6, 2), (4, 5, 2), (4, 7, 10),
          (5, 6, 11), (5, 7, 2), (6, 8, 4), (7, 8, 4), (7, 9, 3), (8, 9, 13)]
-
+    #l = [(1, 2, 5), (1, 3, 5), (2, 4, 5), (2, 5, 5), (3, 6, 5), (4, 7, 5), (5, 7, 5), (6, 5, 5), (6, 7, 5)]
     # Example for bellam ford as -ve edge weight given
     # l = [(1, 2, -1), (1, 3, 4), (2, 3, 3), (2, 4, 2), (2, 5, 2), (4, 2, 1), (4, 3, 5), (5, 4, -3),(3,3,0)]
 
@@ -46,7 +47,7 @@ if __name__ == '__main__':
     #http://nptel.ac.in/courses/106103069/Module_8/mst.htm
     
     """
-    x = Graph(l, directed=False)
+    x = Create_Graph(l, directed=False)
 
     visited = []
     from graph_theory import traversal
@@ -68,3 +69,6 @@ if __name__ == '__main__':
     from graph_theory.single_shortest_path import bellam_ford
 
     bellam_ford(x.graph, 1)
+
+    from graph_theory.detect_cycle import detect_cycle_in_graph
+    detect_cycle_in_graph(x.graph, 1)
