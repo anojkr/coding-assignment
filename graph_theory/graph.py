@@ -63,11 +63,9 @@ if __name__ == '__main__':
     a.prism(x.graph, 1)
 
     from graph_theory.single_shortest_path import Dijkstra
-
     Dijkstra(x.graph, 1)
 
     from graph_theory.single_shortest_path import bellam_ford
-
     bellam_ford(x.graph, 1)
 
     from graph_theory.detect_cycle import detect_cycle_in_graph, detect_bipartile_graph
