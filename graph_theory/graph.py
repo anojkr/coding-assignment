@@ -70,5 +70,8 @@ if __name__ == '__main__':
 
     bellam_ford(x.graph, 1)
 
-    from graph_theory.detect_cycle import detect_cycle_in_graph
+    from graph_theory.detect_cycle import detect_cycle_in_graph, detect_bipartile_graph
     detect_cycle_in_graph(x.graph, 1)
+    detect_bipartile_graph(x.graph, 1)
+
+

@@ -16,5 +16,4 @@ def run():
     s = " ".join(l)
     print(s)
 
-
 run()
