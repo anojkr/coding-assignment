@@ -28,7 +28,7 @@ class MST:
 
     def print_mst_node(self, dict, edge_weight, mst):
         keys = sorted(dict.keys())
-        print("\nPrism algo to find Minimum spanning tree \n")
+        print("\nPrism algo to find Minimum spanning tree_theory \n")
         print("Miniumum MST Cost is {}\n".format(mst))
         for d in keys:
             print("{}-->{} = {}".format(dict[d], d, edge_weight[d]))
