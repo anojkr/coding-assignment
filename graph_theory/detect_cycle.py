@@ -49,6 +49,7 @@ def detect_bipartile_graph(graph, start):
     else:
         print("\n Graph is bipartile \n")
 
+
 """
 # Example having Cycle graph
 # l = [(0,1,5),(0,2,5),(1,2,5),(2,0,5),(2,3,5),(3,3,5)]
