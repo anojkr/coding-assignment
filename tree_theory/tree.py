@@ -97,7 +97,6 @@ class Binary_Search_Tree:
         else:
             t = self.inorder_min(node)
             s = self.delete_node(t, t.data)
-            print(t.data)
             t.left = node.left
             t.right = node.right
             t.parent  = None

@@ -2,7 +2,7 @@
 """
 Application of Breadth first search
 
-1.  It can be used to find minimum cost spanning tree_theory in undirected/ same weighted graph.
+1.  It can be used to find minimum cost spanning trees in undirected/ same weighted graph.
 
 2.  It can be used to check graph is bi-partile or not
 
