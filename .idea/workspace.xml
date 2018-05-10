@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca441cd5-2774-451c-801e-b05e58ff0a27" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/sorting/heap_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linklist/linklist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Linklist/linklist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linklist/sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_theory/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_theory/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_theory/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_theory/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_theory/heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_theory/heap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_theory/minimum_spanning_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_theory/minimum_spanning_tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_theory/traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_theory/traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/heap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/merge_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/merge_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_theory/single_shortest_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_theory/single_shortest_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_theory/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_theory/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_theory/tree_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_theory/tree_operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree_theory/tree_traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree_theory/tree_traversal.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,6 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/coding_assignment$detect_cycle.coverage" NAME="detect_cycle Coverage Results" MODIFIED="1525985239002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph_theory" />
     <SUITE FILE_PATH="coverage/coding_assignment$tp.coverage" NAME="tp Coverage Results" MODIFIED="1525427353310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph_theory" />
     <SUITE FILE_PATH="coverage/coding_assignment$heap__1_.coverage" NAME="heap (1) Coverage Results" MODIFIED="1525521544610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting" />
     <SUITE FILE_PATH="coverage/coding_assignment$sort_linklist.coverage" NAME="sort_linklist Coverage Results" MODIFIED="1524645929727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Linklist" />
@@ -28,7 +24,8 @@
     <SUITE FILE_PATH="coverage/coding_assignment$graph.coverage" NAME="graph Coverage Results" MODIFIED="1525163621506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
     <SUITE FILE_PATH="coverage/coding_assignment$minimum_spanning_tree.coverage" NAME="minimum_spanning_tree Coverage Results" MODIFIED="1525418175894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph_theory" />
     <SUITE FILE_PATH="coverage/coding_assignment$tree.coverage" NAME="tree Coverage Results" MODIFIED="1525031268675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
-    <SUITE FILE_PATH="coverage/coding_assignment$graph__2_.coverage" NAME="graph (2) Coverage Results" MODIFIED="1525521480415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph_theory" />
+    <SUITE FILE_PATH="coverage/coding_assignment$huffman_coding.coverage" NAME="huffman_coding Coverage Results" MODIFIED="1525975798537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/huffman_coding" />
+    <SUITE FILE_PATH="coverage/coding_assignment$graph__2_.coverage" NAME="graph (2) Coverage Results" MODIFIED="1525985212737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph_theory" />
     <SUITE FILE_PATH="coverage/coding_assignment$heap.coverage" NAME="heap Coverage Results" MODIFIED="1525384578261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph_theory" />
     <SUITE FILE_PATH="coverage/coding_assignment$traversal.coverage" NAME="traversal Coverage Results" MODIFIED="1525417444921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph_theory" />
   </component>
@@ -36,12 +33,21 @@
     <favorites_list name="coding-assignment" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="minimum_spanning_tree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graph_theory/minimum_spanning_tree.py">
+    <leaf>
+      <file leaf-file-name="huffman_coding.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/huffman_coding/huffman_coding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="109">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single_shortest_path.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graph_theory/single_shortest_path.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-341">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -49,68 +55,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="doublylinklist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Linklist/doublylinklist.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graph.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graph_theory/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="135">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graph_theory/heap.py">
+      <file leaf-file-name="detect_cycle.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/graph_theory/detect_cycle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="245">
+              <caret line="52" column="3" lean-forward="true" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linklist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Linklist/linklist.py">
+      <file leaf-file-name="tree_traversal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree_theory/tree_traversal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heap_sort.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sorting/heap_sort.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graph_theory/dev.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-              <folding>
-                <element signature="e#1336#1348#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merge_sort.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sorting/merge_sort.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+            <state>
+              <caret selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -151,8 +118,10 @@
         <option value="$PROJECT_DIR$/Linklist/linklist.py" />
         <option value="$PROJECT_DIR$/Linklist/doublylinklist.py" />
         <option value="$PROJECT_DIR$/sorting/heap_sort.py" />
-        <option value="$PROJECT_DIR$/graph_theory/heap.py" />
         <option value="$PROJECT_DIR$/graph_theory/graph.py" />
+        <option value="$PROJECT_DIR$/graph_theory/heap.py" />
+        <option value="$PROJECT_DIR$/huffman_coding/huffman_coding.py" />
+        <option value="$PROJECT_DIR$/graph_theory/detect_cycle.py" />
       </list>
     </option>
   </component>
@@ -193,12 +162,27 @@
             <path>
               <item name="coding-assignment" type="b2602c69:ProjectViewProjectNode" />
               <item name="coding-assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="huffman_coding" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coding-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coding-assignment" type="462c0819:PsiDirectoryNode" />
               <item name="Linklist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="coding-assignment" type="b2602c69:ProjectViewProjectNode" />
               <item name="coding-assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="searching" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coding-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coding-assignment" type="462c0819:PsiDirectoryNode" />
               <item name="sorting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coding-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coding-assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="tree_theory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,8 +207,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.heap (1)">
-    <configuration name="dijkstra" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.detect_cycle">
+    <configuration name="detect_cycle" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="coding-assignment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,9 +221,9 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph_theory/single_shortest_path.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph_theory/detect_cycle.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
@@ -300,6 +284,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="huffman_coding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coding-assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/huffman_coding" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/huffman_coding/huffman_coding.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="linklist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="coding-assignment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -319,40 +322,21 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="minimum_spanning_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="coding-assignment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graph_theory" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph_theory/minimum_spanning_tree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
       <item itemvalue="Python.graph (2)" />
       <item itemvalue="Python.heap (1)" />
       <item itemvalue="Python.doublylinklist" />
       <item itemvalue="Python.linklist" />
-      <item itemvalue="Python.dijkstra" />
-      <item itemvalue="Python.minimum_spanning_tree" />
+      <item itemvalue="Python.huffman_coding" />
+      <item itemvalue="Python.detect_cycle" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.detect_cycle" />
+        <item itemvalue="Python.huffman_coding" />
         <item itemvalue="Python.heap (1)" />
         <item itemvalue="Python.linklist" />
         <item itemvalue="Python.doublylinklist" />
-        <item itemvalue="Python.minimum_spanning_tree" />
-        <item itemvalue="Python.dijkstra" />
       </list>
     </recent_temporary>
   </component>
@@ -375,26 +359,26 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.21423106" side_tool="true" weight="0.27710843" />
-      <window_info anchor="right" x="0" y="0" width="277" height="580" id="Documentation" side_tool="true" weight="0.32976282" />
+      <window_info anchor="right" x="0" y="0" width="277" height="580" id="Documentation" order="5" side_tool="true" visible="true" weight="0.3291039" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.31777108" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7857689" visible="true" weight="0.27710843" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.16679418" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.5148206" />
+      <window_info active="true" anchor="bottom" content_ui="combo" x="135" y="482" width="1207" height="217" id="Run" order="12" sideWeight="0.7857689" type="FLOATING" visible="true" weight="0.27710843" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.17842981" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32976282" />
       <window_info id="Structure" order="1" sideWeight="0.50150603" side_tool="true" weight="0.16679418" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.3298969" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49961746" weight="0.3990964" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49961746" weight="0.3978159" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -428,10 +412,139 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/stack/sor_stack.py" />
+    <entry file="file://$PROJECT_DIR$/stack/NGN.py" />
+    <entry file="file://$PROJECT_DIR$/stack/infixtopostfix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Learn-python/Notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linklist/sort.py" />
+    <entry file="file://$PROJECT_DIR$/graph_theory/dev.py" />
+    <entry file="file://$PROJECT_DIR$/graph_theory/heap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searching/linear_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searching/binary_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/selection_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/heap_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/merge_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/quick_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_theory/minimum_spanning_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_theory/traversal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_theory/single_shortest_path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/insertion_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linklist/doublylinklist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linklist/linklist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_theory/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graph_theory/minimum_spanning_tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -460,13 +573,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/tree.py" />
     <entry file="file://$PROJECT_DIR$/stack/infixtopostfix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -474,13 +581,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/tree.py" />
     <entry file="file://$PROJECT_DIR$/stack/infixtopostfix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -505,16 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="128" column="76" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph_theory/notes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tree/tree.py" />
     <entry file="file://$PROJECT_DIR$/Learn-python/Notes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -522,30 +614,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_theory/single_shortest_path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph_theory/traversal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Linklist/sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Linklist/sort.py" />
     <entry file="file://$PROJECT_DIR$/sorting/merge_sort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -567,27 +636,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sorting/heap_sort.py">
+    <entry file="file://$PROJECT_DIR$/graph_theory/dev.py" />
+    <entry file="file://$PROJECT_DIR$/tree_theory/tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        <state relative-caret-position="180">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_theory/dev.py">
+    <entry file="file://$PROJECT_DIR$/tree_theory/tree_operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="e#1336#1348#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/heap_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graph_theory/heap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        <state relative-caret-position="45">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -601,10 +675,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/graph_theory/traversal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tree_theory/tree_traversal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huffman_coding/huffman_coding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_theory/single_shortest_path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-341">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graph_theory/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        <state relative-caret-position="135">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_theory/detect_cycle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="52" column="3" lean-forward="true" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
         </state>
       </provider>
     </entry>

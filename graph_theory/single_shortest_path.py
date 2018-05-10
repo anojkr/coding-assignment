@@ -7,7 +7,6 @@ def length(u, v, graph):
         if t[0] == v:
             return t[1]
 
-
 def print_result(dist, parent, name):
     print("\n Result single source shortest path using {} \n{} \n{}\n".format(name, dist, parent))
 
