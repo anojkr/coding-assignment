@@ -33,7 +33,7 @@ class MST:
         for d in keys:
             print("{}-->{} = {}".format(dict[d], d, edge_weight[d]))
 
-    def prism(self, graph, start, directed=False):
+    def prims(self, graph, start, directed=False):
         mst = 0
         key = {}  # Vertice - edge_weight btw parent/source to chid current node and parent of current node
         parent = {}

@@ -1,3 +1,5 @@
+import tree_operations
+
 class Node:
 
     def __init__(self, data):
@@ -5,6 +7,7 @@ class Node:
         self.left   = None
         self.right  = None
         self.parent = None
+        self.height = 1
 
 
 class Binary_Search_Tree:
@@ -14,6 +17,7 @@ class Binary_Search_Tree:
         self.left   = None
         self.right  = None
         self.parent = None
+        self.height = 1
 
     def insert_node(self, root, *newdata):
         for data in newdata:
@@ -87,7 +91,6 @@ class Binary_Search_Tree:
             #Delete node having one child
             else:
                 t = self.inorder_min(node)
-                print(t.data)
                 if node.left is None and node.parent.data<=node.data:
                     node.parent.right = t
                 elif node.right is None and node.parent.data>=node.data:
@@ -106,7 +109,7 @@ class Binary_Search_Tree:
 
 #b = Binary_Search_Tree(50)
 #b.insert_node(b,30,70,20,40,60,80,15,25,35,45,55,65,75,85)
-
+"""
 b = Binary_Search_Tree(5)
 b.insert_node(b,1,10,20,30,40,50,60,70)
 
@@ -126,3 +129,4 @@ print("\nPostorder Traversal  = {}\n".format(tree_traversal.traversal('postorder
 print("\nNo. of Leaves in BST       = {}\n".format(tree_operations.no_of_leaves_bst(c)))
 print("\nNo. of Full node in BST    = {}\n".format(tree_operations.no_of_fullnode(c)))
 print("\nMaximum Height of BST      = {}\n".format(tree_operations.height_of_tree(c)))
+"""

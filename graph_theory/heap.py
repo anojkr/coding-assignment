@@ -1,3 +1,4 @@
+#Heap implementation starting from index 1
 def heapify(list, i):
     left = 2 * i
     right = 2 * i + 1
@@ -13,7 +14,7 @@ def heapify(list, i):
 
 
 def build_heap(list):
-    list.insert(0, [-5, -6])
+    list.insert(0, [-5, -6])#Dummy data added so that heap start from index 1
     index = len(list) // 2
     while index != -1:
         heapify(list, index)
@@ -21,7 +22,7 @@ def build_heap(list):
 
 
 def decrease_key(list, index, value):
-    list.insert(0, [-5, -6])
+    list.insert(0, [-5, -6])#Dummy data added so that heap start from index 1
     i = index
     if value > list[i][0]:
         print("Error")

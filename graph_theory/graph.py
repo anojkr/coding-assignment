@@ -60,7 +60,7 @@ if __name__ == '__main__':
     from graph_theory.minimum_spanning_tree import MST
 
     a = MST()
-    a.prism(x.graph, 1)
+    a.prims(x.graph, 1)
 
     from graph_theory.single_shortest_path import Dijkstra
     Dijkstra(x.graph, 1)

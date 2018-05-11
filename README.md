@@ -21,7 +21,7 @@ Course Content
         (anything required in the context of coding interviews)
     Data structures:
         Array
-        Linked List (Singly/Doubly)
+        Linked List (Singly / Doubly)
         Stack
         Queue
         Struct/Class

@@ -7,12 +7,12 @@ def inorder_traversal(root, r):
     return r
 
 
-def preorder_treversal(root, r):
+def preorder_traversal(root, r):
     node = root
     if node != None:
         r.append(node.data)
-        preorder_treversal(node.left, r)
-        preorder_treversal(node.right, r)
+        preorder_traversal(node.left, r)
+        preorder_traversal(node.right, r)
     return r
 
 
@@ -32,4 +32,4 @@ def traversal(type, root):
     elif type == 'postorder':
         return postorder_traversal(root, r)
     elif type == 'preorder':
-        return preorder_treversal(root, r)
+        return preorder_traversal(root, r)
