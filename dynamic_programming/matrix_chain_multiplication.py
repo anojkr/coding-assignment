@@ -9,7 +9,7 @@ def matrix_chain_mul(matrix_order):
 	for i in range(1, n):
 		table[i][i] = 0
 	
-	for l in range(2, n+1):
+	for l in range(2, n):
 		for i in range(1, n-l+1):
 			j= i+l-1
 			r = []
@@ -22,8 +22,9 @@ def matrix_chain_mul(matrix_order):
 				table[i][j] = min(r)
 	
 	[print(table[k]) for k in range(1,n-1)]
+	print("\nMinimum cost for multiplication of matrix - {}\n" .format(table[1][n-1]))
 	return table[1][n-1]
 
 
 a = [30,35,15,5,10,20,25]
-print(matrix_chain_mul(a))
+matrix_chain_mul(a)

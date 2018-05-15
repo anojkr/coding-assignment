@@ -6,7 +6,7 @@ def subset_sum(s, sum):
 	for b in range(r):
 		for sumz in range(c):
 			if sumz==0:
-				table[b][sumz] = True
+				table[b][sumz] = Trues
 			elif sumz != 0 and b == 0:
 				table[b][sumz] = False
 			elif sumz<s[b-1]:
