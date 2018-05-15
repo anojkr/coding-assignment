@@ -10,8 +10,7 @@ def lcs_problem(alist, blist, m, n):
 				table[i][j] = 1+table[i-1][j-1]
 			else:
 				table[i][j] = max(table[i-1][j], table[i][j-1])
-	for k in table:
-		print(k)
+	[print(k) for k in table]
 	print("\nLongest common subsequence = {}\n".format(table[m][n]))
 
 a = list("XMJYAUZ")
