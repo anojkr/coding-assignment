@@ -1,0 +1,215 @@
+
+ChainMap – the list of dictionaries
+
+#	Python also contains a container called “ChainMap” which encapsulates many dictionaries into 
+ 	one unit. ChainMap is member of module “collections“
+
+ 	"""
+	 	Example 
+
+	 	import collections
+
+	 	dic1 = { 'a' : 2, 'b' : 3, 'c' : 4}
+	 	dic2 = { 'e' : 3, 'f' : 4 }
+
+	 	chain = collections.ChainMap(dic1,dict2)
+
+	 	print(chain.keys())
+	 	#[a,b,c,e,f]
+	 	print(chain.values())
+	 	#[2,3,4]
+	 	print(chain.maps)
+	 	#[{ 'a' : 2, 'b' : 3, 'c' : 4}, { 'e' : 3, 'f' : 4 }]
+
+	 	dict3 = {'w' : 7, 'z' : 6}
+
+	 	newchain = chain.new_child(dict3)
+	 	print(chain.maps)
+	 	#[{'w' : 7, 'z' : 6}, { 'a' : 2, 'b' : 3, 'c' : 4}, { 'e' : 3, 'f' : 4 }]
+
+ 	"""
+
+#	Operations on ChainMap
+
+	{
+
+		keys() 			- 	This function is used to display all the keys of all the dictionaries 	
+							in ChainMap.
+
+		values() 		- 	This function is used to display values of all the dictionaries in 
+							ChainMap.
+
+		maps 			- 	This function is used to display keys with corresponding values of all 	
+							the dictionaries in ChainMap.
+
+		new_child() 	- 	This function adds a new dictionary in the beginning of the ChainMap.
+
+		reversed() 		- 	This function reverses the relative ordering of dictionaries in the 
+							ChainMap.
+
+	}
+
+
+---------------------------------------------------------------------------------------------------
+
+defaultdict – dictionary with a default value
+
+#.	It hepls to implement graph data structure easily.
+
+#.	Instead of having to check for the existence of a key and adding a value every time, you can 
+	just declare the default from the beginning, and there is no need to worry about the rest.
+
+	"""
+		For example, let's say we are building a very basic graph structure from a list of
+		connected nodes.
+		
+		import collections
+
+		graph = collections.defaultdict(list) 
+		#If key is not present and user try to insert item on that key. User can do that because key 	have default value
+
+		nodes = [(1,2,2),(1,4,6),(2,3,3),(2,4,8),(2,5,5),(3,5,7),(4,5,9)]
+
+		for from_, to, dis in nodes:
+			graph[from].append((to, dis))
+
+	"""
+
+---------------------------------------------------------------------------------------------------
+
+namedtuple – tuples with field names
+
+#.	Named tuples assign meaning to each position in a tuple and allow for more readable,
+	self-documenting code. They can be used wherever regular tuples are used, and they add the ability to access fields by name instead of position index.
+
+	"""
+		import collections
+		Rotation = collections.namedtuple('Rotation',['l','w','h'])
+		point = Rotation(5,6,7)
+		area = point.l*point.w*point.h 		#Access by keyname
+		area1= point[0]*point[1]*point[2]	#Access by index
+		print(area)
+		print(area1)
+
+	"""
+
+#.	Operations on namedtuple()
+
+	{
+		Access by index : The attribute values of namedtuple() are ordered and can be accessed using the index number unlike dictionaries which are not accessible by index.
+
+		Access by keyname : Access by keyname is also allowed as in dictionaries.
+
+		using getattr() :- This is yet another way to access the value by giving namedtuple and key value as its argument.
+
+		_make() :- This function is used to return a namedtuple() from the iterable/list passed as argument.
+
+		_asdict() :- This function returns the OrdereDict() as constructed from the mapped values of namedtuple().
+
+		using “**” (double star) operator :- This function is used to convert a dictionary into the namedtuple().
+	
+	}
+
+---------------------------------------------------------------------------------------------------
+
+enum – a group of constants
+
+#.	The enum package is quite similar to namedtuple but has a completely different goal
+	and interface. The basic enum object makes it really easy to have constants in your
+	modules while still avoiding magic numbers.
+
+---------------------------------------------------------------------------------------------------
+
+OrderedDict – a dictionary where the insertion order matters
+
+#.	OrderdDict is a dict that keeps track of the order in which the items were inserted.
+	Whereas a normal dict will return your keys in the order of hash, OrderedDict will
+	return your keys by the order of insertion. So, it's not ordered by key or value, but
+	that is easily possible too:
+
+#.	OrderedDict preserves the order in which the keys are inserted. A regular dict doesn’t track 
+	the insertion order, and iterating it gives the values in an arbitrary order. By contrast, the order the items are inserted is remembered by OrderedDict.
+
+
+	{
+
+		popitem(last=True) : 
+
+	    The popitem() method for ordered dictionaries returns and removes a (key, value) pair. The pairs are returned in LIFO order if last is true or FIFO order if false.
+
+	}
+
+	"""
+		Example
+
+		import collections
+
+		odr = collections.OrderedDict()
+
+		odr['a'] = 1 
+		odr['b'] = 2
+		odr['c'] = 3
+		odr['d'] = 4
+		odr['e'] = 5
+
+		odr.popitems(last=True)		#Last-In-First-Out
+		odr.popitems(last=False)	#First-In-First-Out
+
+	"""
+
+---------------------------------------------------------------------------------------------------
+
+heapq – the ordered list
+
+#. 	heapq is used to implement heap data structure. There are two types of heap 
+		1. Max Heap
+		2. Min Heap
+
+#. 	Operations on heapq
+
+	{
+
+		heapq.heapify(x)				:	Transform list x into a heap, in-place, in linear time.
+
+
+		heapq.heappush(heap, item)		:	Push the value item onto the heap, maintaining the 
+												heap invariant.
+
+	 	heapq.heappop(heap)				:	Pop and return the smallest item from the heap,
+	 											maintaining the heap invariant.
+
+	 	heapq.heappushpop(heap, item)	:	Push item on the heap, then pop and return the
+	  										smallest item from the heap. The combined action runs more efficiently than heappush() followed by a separate call to heappop().
+
+	} 
+
+---------------------------------------------------------------------------------------------------
+
+ bisect — Array bisection algorithm/Sorted list
+
+#.	The purpose of Bisect algorithm is to find a position in list where an element needs to be 
+	inserted to keep the list sorted.
+
+#.	Python in its definition provides the bisect algorithms using the module “bisect” which allows 
+	to keep the list in sorted order after insertion of each element. This is essential as this reduces overhead time required to sort the list again and again after insertion of each element.
+
+#. 	Reference - https://www.geeksforgeeks.org/bisect-algorithm-functions-in-python/
+
+#.	Operations on bisect
+
+	{
+
+	bisect.bisect(a, x, lo=0, hi=len(a))
+
+    Similar to bisect_left(), but returns an insertion point which comes after (to the right of) any existing entries of x in a.
+
+	bisect.bisect_left(a, x, lo=0, hi=len(a))
+
+    Locate the insertion point for x in a to maintain sorted order. The parameters lo and hi may be used to specify a subset of the list which should be considered; by default the entire list is used. If x is already present in a, the insertion point will be before (to the left of) any existing entries. The return value is suitable for use as the first parameter to list.insert() assuming that a is already sorted.
+
+	bisect.insort_left(a, x, lo=0, hi=len(a))
+
+    Insert x in a in sorted order. This is equivalent to a.insert(bisect.bisect_left(a, x, lo, hi), x) assuming that a is already sorted. Keep in mind that the O(log n) search is dominated by the slow O(n) insertion step.
+
+
+	}
