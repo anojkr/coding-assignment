@@ -1,0 +1,236 @@
+List Comprehension
+
+#.	List comprehension is an elegant way to define and create list in Python. 
+#.	List comprehension is an elegant way to define and create list in Python. These lists have 
+	often the qualities of sets, but are not in all cases sets. 
+#.	Nested list comprehension is allowed.
+
+	"""
+		Example
+
+			l1 = [x*x for x in range(5)] 				#simple list comprehension
+
+			l2 = [x*x for x in range(10) if x%2 == 0 ]	#list comprehension with condition/filter
+
+			l3 = [ print(x+y) for x in range(10) for y in range(10,20)]	#Nested list comprehension
+
+	"""
+
+dict comprehensions
+
+#.	dict comprehensions are very similar to list comprehensions, but the result is a dict
+	instead. Other than this, the only real difference is that you need to return both a key
+	and a value, whereas a list comprehension accepts any type of value.
+
+	"""
+		Example
+
+			l1 = { x: x*x for x in range(5) } 				#simple dict comprehension
+
+			l2 = { x: x*x for x in range(10) if x%2 == 0 }	#dict comprehension with condition/filter
+
+			l3 = { print(x+y) for x in range(10) for y in range(10,20)}	#Nested dict comprehension
+
+	"""
+
+set comprehensions
+
+#.	Just as you can create a set using curly brackets ( {} ), you can also create a set using
+	set comprehensions. These work in a way similar to list comprehensions, but the
+	values are unique (and without sort order):
+
+	Input 	{x*y for x in range(3) for y in range(3)}
+	
+	Output	{0, 1, 2, 4}
+
+
+---------------------------------------------------------------------------------------------------
+lambda functions
+
+#.	The lambda operator or lambda function is a way to create small anonymous functions, i.e. 	
+	functions without a name. These functions are throw-away functions, i.e. they are just needed where they have been created. Lambda functions are mainly used in combination with the functions filter(), map() and reduce(). The lambda feature was added to Python due to the demand from Lisp programmers. 
+
+#.	lambda is an expression, not a statement.
+
+#.	lambda ’s body is a single expression, not a block of statements.
+
+#.	For reference https://www.python-course.eu/python3_lambda.php
+
+	The general syntax of a lambda function is quite simple:
+
+		lambda argument1, argument2,... argumentN : expression using arguments
+
+		sum = lambda x,y: x+y
+
+		l = []
+		sum = list(map(lambda v1 : operation(v1), l))
+		sum = list(filter(lambda v1 : operation(v1), l))
+
+		import functools
+		functools.reduce(lambda x,y: operation(v1,v2), l)
+
+
+--------------------------------------------------------------------------------------------------
+
+itertools
+
+https://medium.com/@mr_rigden/a-guide-to-python-itertools-82e5a306cdf8
+
+https://www.youtube.com/watch?v=xK7E2YmjyAc
+
+--------------------------------------------------------------------------------------------------
+
+
+chain – combining multiple results
+
+
+
+#.	This function takes a series of iterables/list and return them as one long iterable/list.
+
+		itertools.chain(*iterables)
+
+#.	The chain function is a simple but useful function that combines the results of
+	multiple iterators. Very simple but also very useful if you have multiple lists,
+	iterators, and so on—just combine them with a simple chain:
+
+	"""
+		from itertools import *
+
+		a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+		b = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+		c = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+		r = chain(a,b,c)
+		print(list(r))
+
+		Output
+
+		[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+	"""
+--------------------------------------------------------------------------------------------------
+count()
+
+#.	Makes an iterator that returns evenly spaced values starting with number start.
+
+		itertools.count(start=0, step=1)
+
+	"""
+		from itertools import *
+
+		for i in itertools.count(10,3):
+	    print(i)
+	    if i > 20:
+	        break
+	"""
+--------------------------------------------------------------------------------------------------
+
+cycle()
+
+#.	This function cycles through an iterator endlessly.
+		
+		itertools.cycle(iterable)
+
+	"""
+
+	colors = ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
+
+	for color in itertools.cycle(colors):
+    	print(color)
+
+	"""
+
+--------------------------------------------------------------------------------------------------
+
+islice()
+
+#.	This function is very much like slices. This function allows you to cut out a piece of an 
+	iterable.
+	
+		itertools.islice(iterable, start, stop, step)
+
+		"""
+			Example
+
+			from itertools import *
+
+			for each in itertools.islice(count(), 1 , 100)
+    			print(each)
+
+		"""
+
+--------------------------------------------------------------------------------------------------
+
+permutations – combinations where the order matters
+
+#.	The permutations function is quite similar to the combinations function. The only
+	real difference is that (a, b) is considered distinct from (b, a) . In other words, the
+	order matters
+
+		itertools.permutations(iterable, r=None)
+
+	"""	
+		Example
+
+		from itertools import *
+
+		alpha_data = ['a', 'b', 'c']
+
+		result = list(permutations(alpha_data))
+		print(result)
+
+	"""
+
+--------------------------------------------------------------------------------------------------
+
+combinations – combinatorics in Python
+
+#.	The combinations iterator produces results exactly as you would expect from the
+	mathematical definition. All combinations with a specific length from a given list
+
+#.	This function takes an iterable and a integer. This will create all the unique combination 
+	that have r members.
+
+	"""
+
+		from itertools import *
+
+		shapes = ['circle', 'triangle', 'square',]
+
+		result = list(combinations(shapes, 2))
+    	print(result)
+
+
+	"""
+
+--------------------------------------------------------------------------------------------------
+
+dropwhile/takewhile – selecting items using a function
+
+#. The dropwhile function will drop all results until a given predicate evaluates to true.
+		
+		itertools.takwwhile(predicate, iterable)
+
+	"""
+		data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
+
+		result = itertools.dropwhile(lambda x: x<5, data)
+
+		Output - [5,6,7,8,9,10]
+
+	"""
+
+takewhile()
+
+#.	This is kind of the opposite of dropwhile(). This function makes an iterator and returns 
+	elements from the iterable as long as the predicate is true.
+
+
+	"""
+		data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
+
+		result = itertools.takewhile(lambda x: x<5, data)
+
+		Output - [1,2,3,4]
+
+	"""

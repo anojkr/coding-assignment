@@ -1,7 +1,6 @@
 List - mutable list of items
 
-#. A list is a ordered collection data types/container that is iterable, mutable and duplicates are 
-   allowed. It can be a collection of hetrogenous items.
+#. A list is a ordered collection data types/container that is iterable, mutable and duplicates are allowed. It can be a collection of hetrogenous items.
 
 #. It's support operation in O(1) time complexity are {len(list), list.append(item), set , get}
 
@@ -77,7 +76,7 @@ set – like a dict without values, mutable collection
 
 #.	Frozen sets are immutable sets.
 
-----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 tuple – the immutable list
 

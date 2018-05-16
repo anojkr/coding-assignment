@@ -33,7 +33,7 @@ ChainMap – the list of dictionaries
 
 	{
 
-		keys() 			- 	This function is used to display all the keys of all the dictionaries 	
+		keys() 			- 	This function is used to display all the keys of all the dictionaries
 							in ChainMap.
 
 		values() 		- 	This function is used to display values of all the dictionaries in 
@@ -198,7 +198,7 @@ heapq – the ordered list
 #.	Operations on bisect
 
 	{
-	
+
 
 		bisect.bisect(a, x, lo=0, hi=len(a))
 		
