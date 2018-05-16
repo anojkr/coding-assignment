@@ -1,7 +1,7 @@
 
 ChainMap – the list of dictionaries
 
-#	Python also contains a container called “ChainMap” which encapsulates many dictionaries into 
+#.	Python also contains a container called “ChainMap” which encapsulates many dictionaries into 
  	one unit. ChainMap is member of module “collections“
 
  	"""
@@ -29,7 +29,7 @@ ChainMap – the list of dictionaries
 
  	"""
 
-#	Operations on ChainMap
+#.	Operations on ChainMap
 
 	{
 
@@ -173,10 +173,10 @@ heapq – the ordered list
 
 
 		heapq.heappush(heap, item)		:	Push the value item onto the heap, maintaining the 
-												heap invariant.
+											heap invariant.
 
 	 	heapq.heappop(heap)				:	Pop and return the smallest item from the heap,
-	 											maintaining the heap invariant.
+	 										maintaining the heap invariant.
 
 	 	heapq.heappushpop(heap, item)	:	Push item on the heap, then pop and return the
 	  										smallest item from the heap. The combined action runs more efficiently than heappush() followed by a separate call to heappop().
@@ -198,18 +198,20 @@ heapq – the ordered list
 #.	Operations on bisect
 
 	{
+	
 
-	bisect.bisect(a, x, lo=0, hi=len(a))
+		bisect.bisect(a, x, lo=0, hi=len(a))
+		
+		Similar to bisect_left(), but returns an insertion point which comes after (to the right of) any existing entries of x in a.
 
-    Similar to bisect_left(), but returns an insertion point which comes after (to the right of) any existing entries of x in a.
+		bisect.bisect_left(a, x, lo=0, hi=len(a))
 
-	bisect.bisect_left(a, x, lo=0, hi=len(a))
+	    Locate the insertion point for x in a to maintain sorted order. The parameters lo and hi may be used to specify a subset of the list which should be considered; by default the entire list is used. If x is already present in a, the insertion point will be before (to the left of) any existing entries. The return value is suitable for use as the first parameter to list.insert() assuming that a is already sorted.
 
-    Locate the insertion point for x in a to maintain sorted order. The parameters lo and hi may be used to specify a subset of the list which should be considered; by default the entire list is used. If x is already present in a, the insertion point will be before (to the left of) any existing entries. The return value is suitable for use as the first parameter to list.insert() assuming that a is already sorted.
+		bisect.insort_left(a, x, lo=0, hi=len(a))
 
-	bisect.insort_left(a, x, lo=0, hi=len(a))
+	    Insert x in a in sorted order. This is equivalent to a.insert(bisect.bisect_left(a, x, lo, hi), x) assuming that a is already sorted. Keep in mind that the O(log n) search is dominated by the slow O(n) insertion step.
 
-    Insert x in a in sorted order. This is equivalent to a.insert(bisect.bisect_left(a, x, lo, hi), x) assuming that a is already sorted. Keep in mind that the O(log n) search is dominated by the slow O(n) insertion step.
 
 
 	}

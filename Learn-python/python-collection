@@ -22,8 +22,8 @@ List - mutable list of items
 
 Dictionary - mutable container
 
-#. Some operation in dictionary take O(1) time complexity such .
-#. Buid in method of dictionary are
+#. 	Some operation in dictionary take O(1) time complexity such .
+#. 	Buid in method of dictionary are
 
 	{
 
@@ -86,3 +86,7 @@ tuple – the immutable list
 		dict[t] = 'spam'
 
 #. 	Nested tuples are permissable in python.
+
+
+
+
