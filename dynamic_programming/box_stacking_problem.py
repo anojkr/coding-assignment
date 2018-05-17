@@ -2,21 +2,21 @@
 
 def generate_all_dimensions(arr):
 	r = []
-	for x in arr:
-		h1 = x[0]
-		d1 = min(x[1],x[2])
-		w1 = max(x[1],x[2])
-		r.append([d1*w1,h1,d1,w1])
+	for height, length, breadth  in arr:
+		h1 = height
+		d1 = min(length, breadth)
+		w1 = max(length, breadth)
+		r.append([d1*w1, h1, d1, w1])
 
-		h2 = x[1]
-		d2 = min(x[0],x[2])
-		w2 = max(x[0],x[2])
-		r.append([d2*w2,h2,d2,w2])
+		h2 = length
+		d2 = min(height,breadth)
+		w2 = max(height,breadth)
+		r.append([d2*w2, h2, d2, w2])
 
-		h3 = x[2]
-		d3 = min(x[0],x[1])
-		w3 = max(x[0],x[1])
-		r.append([d3*w3,h3,d3,w3])
+		h3 = breadth
+		d3 = min(height,length)
+		w3 = max(height,length)
+		r.append([d3*w3, h3, d3, w3])
 
 	r.sort(reverse=True)
 	[k.pop(0) for k in r]
@@ -30,16 +30,18 @@ def box_stacking_problem(arr):
 	d = []
 
 	R = [idx for idx in range(len(r))]
-	[d.append(t[0]) for t in r]
+	[d.append(height) for height, length, breadth in r]
 
-	for i in range(1, len(r)):
+	for box1 in range(1, len(r)):
 		m = []
-		for k in range(i):
-			if can_stack(r,i,k):
-				stack_height = d[k] + r[i][0]
-				if stack_height > d[i]:
-					d[i] = stack_height
-					R[i] = k
+		for box2 in range(box1):
+			if can_stack(r, box1, box2):
+				height_box2 = d[box2]
+				height_box1 = r[box1][0]
+				stack_height = height_box2 + height_box1
+				if stack_height > d[box1]:
+					d[box1] = stack_height
+					R[box1] = box2
 	
 	max_height = max(d)
 	start_index = d.index(max_height)

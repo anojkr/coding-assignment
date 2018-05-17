@@ -1,11 +1,11 @@
-import graph_theory.graph
+import graph
 
 def depth_first_search_recursive(start, graph, visited, count):
     visited.append(start)
-    for nbr in graph[start]:
-        if nbr[0] not in visited:
-            visited.append(depth_first_search_recursive(nbr[0], graph, visited, count))
-        elif nbr[0] in visited:
+    for destionation, weight in graph[start]:
+        if destionation not in visited:
+            visited.append(depth_first_search_recursive(destionation, graph, visited, count))
+        elif destionation in visited:
             count.append(False)
 
 def detect_cycle_in_graph(graph, start):
@@ -26,19 +26,19 @@ def coloring_node(color, node, g):
 def best_first_search(start, graph):
     visited = []
     g = {}
-    for k in graph:
-        g[k] = None
+    for source in graph:
+        g[source] = None
     queue = [start]
     visited.append(start)
     g[start] = 'RED'
     while len(queue) != 0:
-        v = queue.pop(0)
-        for nbr in graph[v]:
-            if nbr[0] not in visited and g[nbr[0]] != g[v]:
-                coloring_node(g[v], nbr[0], g)
-                queue.append(nbr[0])
-                visited.append(nbr[0])
-            elif g[nbr[0]] == g[v]:
+        source = queue.pop(0)
+        for nbr, weight in graph[source]:
+            if nbr not in visited and g[nbr] != g[source]:
+                coloring_node(g[source], nbr, g)
+                queue.append(nbr)
+                visited.append(nbr)
+            elif g[nbr] == g[source]:
                 return False
     print("\n Best First Search Result \n {}\n".format(visited))
 

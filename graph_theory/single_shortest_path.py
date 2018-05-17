@@ -1,5 +1,5 @@
 import heapq
-from graph_theory import heap
+import heap
 
 
 def length(u, v, graph):
@@ -10,57 +10,62 @@ def length(u, v, graph):
 def print_result(dist, parent, name):
     print("\n Result single source shortest path using {} \n{} \n{}\n".format(name, dist, parent))
 
-def relax_operation(Q, alt, source, nbr, dist, prev):
-        if alt < dist[nbr[0]]:
-            index = Q.index([dist[nbr[0]], nbr[0]])
-            dist[nbr[0]] = alt
-            prev[nbr[0]] = source[1]
+def relax_operation(Q, alt, source, destionation, dist, prev):
+        if alt < dist[destionation]:
+            index = Q.index([dist[destionation], destionation])
+            dist[destionation] = alt
+            prev[destionation] = source
             heap.decrease_key(Q, index + 1, alt)  # here index pass as parameter with +1 because heap implemented with starting index 1.
 
 #Dijstra only work with positive edge weight
-def Dijkstra(graph, source):
+def Dijkstra(graph, source_node):
     dist = {}
     prev = {}
-    dist[source] = 0
+    dist[source_node] = 0
     Q = []
-    for v in graph:
-        if v != source:
-            dist[v] = 1000
-            prev[v] = None
-        Q.append([dist[v], v])
+    for source in graph:
+        if source != source_node:
+            dist[source] = 1000
+            prev[source] = None
+        Q.append([dist[source], source])
     heapq.heapify(Q)
     while len(Q) != 0:
         u = heapq.heappop(Q)
-        for nbr in graph[u[1]]:
-            alt = dist[u[1]] + length(u[1], nbr[0], graph)
-            relax_operation(Q, alt, u, nbr, dist, prev )
+        src = u[1] #Source node
+        for destionation, weight in graph[src]:
+            alt = dist[src] + length(src, destionation, graph)
+            relax_operation(Q, alt, src, destionation, dist, prev )
     print_result(dist, prev, 'Dijkstra')
     return dist, prev
 
 #Bellamford is used to detect it there exist a negative edge weight cycle
-def bellam_ford(graph, source):
+def bellam_ford(graph, source_node):
         dist = {}
         prev = {}
-        dist[source] = 0
+        dist[source_node] = 0
         Q = []
-        for v in graph:
-            if v != source:
-                dist[v] = 1000
-                prev[v] = None
-            Q.append([dist[v], v])
+
+        for source in graph:
+            if source != source_node:
+                dist[source] = 1000
+                prev[source] = None
+            Q.append([dist[source], source])
         heapq.heapify(Q)
         k = list(graph.keys())
         temp = k.pop()
-        for u in k:
-            for v in graph[u]:
-                alt = dist[u] + length(u, v[0], graph)
-                if alt < dist[v[0]]:
-                    dist[v[0]] = alt
-                    prev[v[0]] = u 
+
+        for src in k: #Here src is source node
+            for destionation, weight in graph[src]:
+                alt = dist[src] + length(src, destionation, graph)
+                if alt < dist[destionation]:
+                    dist[destionation] = alt
+                    prev[destionation] = src 
+
         for nbr in graph[temp]:
-            alt = dist[u] + length(u, v[0], graph)
-            if alt <= dist[v[0]]:
+            alt = dist[src] + length(src, destionation, graph)
+            if alt <= dist[destionation]:
                 print("Bellam Ford Fail")
                 return False
+
         print_result(dist, prev, 'BellamFord')
         return dist, prev
