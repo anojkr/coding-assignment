@@ -39,8 +39,8 @@ ChainMap – the list of dictionaries
 		values() 		- 	This function is used to display values of all the dictionaries in 
 							ChainMap.
 
-		maps 			- 	This function is used to display keys with corresponding values of all 	
-							the dictionaries in ChainMap.
+		maps 			- 	This function is used to display keys with corresponding values of 
+							all the dictionaries in ChainMap.
 
 		new_child() 	- 	This function adds a new dictionary in the beginning of the ChainMap.
 
@@ -190,8 +190,8 @@ heapq – the ordered list
 #.	The purpose of Bisect algorithm is to find a position in list where an element needs to be 
 	inserted to keep the list sorted.
 
-#.	Python in its definition provides the bisect algorithms using the module “bisect” which allows 
-	to keep the list in sorted order after insertion of each element. This is essential as this reduces overhead time required to sort the list again and again after insertion of each element.
+#.	Python in its definition provides the bisect algorithms using the module “bisect” which 
+	allows to keep the list in sorted order after insertion of each element. This is essential as this reduces overhead time required to sort the list again and again after insertion of each element.
 
 #. 	Reference - https://www.geeksforgeeks.org/bisect-algorithm-functions-in-python/
 

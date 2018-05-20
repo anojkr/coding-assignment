@@ -1,47 +1,49 @@
+from collections import defaultdict
+from itertools import groupby
+
 class Create_Graph:
 
-    def __init__(self, list, directed=False):
-        self.graph = dict()
-        l = list.copy()
+    def __init__(self, list_nodes, directed=False):
+        self.graph = defaultdict(list)
+        l = list_nodes.copy()
 
         if directed == False:
-            self.make_undirected_graph(list, l)
-        self.setup_graph(l, self.graph)
+            self.make_undirected_graph(list_nodes, l)
+        self.graph = self.setup_graph(l, self.graph)
         self.print_graph()
 
-    def add_edges_to_nodes(self, list, graph, directed=False):
-        l = list.copy()
+    def add_edges_to_nodes(self, list_nodes, graph, directed=False):
+        l = list_nodes.copy()
         if directed == False:
-            self.make_undirected_graph(list, l)
+            self.make_undirected_graph(list_nodes, l)
         self.setup_graph(l, graph)
         self.print_graph()
 
-    def make_undirected_graph(self, list, l):
-        for source, destionation, weight in list:
+    def make_undirected_graph(self, list_nodes, l):
+        for source, destionation, weight in list_nodes:
             l.append((destionation, source, weight))
         return l
 
     def setup_graph(self, l, graph):
-        for source, destionation, weight in l:
-            if source not in graph:
-                graph[source] = []
-            elif destionation not in graph:
-                graph[source] = []
-        [graph[source].append((destionation, weight)) for source, destionation, weight in l]
-        return graph
+        for key, group in groupby(l, lambda x : x[0]):
+            for t in group:
+                graph[key].append(t[1:])
+        return dict(graph)
 
     def print_graph(self):
         print("\nGraph shown below")
         print("\nSource : [(destination, weight)]\n")
+        print("{")
         for t in self.graph.items():
-            print(t)
+            print("\t {}".format(t))
+        print("}")
 
 
 if __name__ == '__main__':
     # l= [(1,2,2),(1,4,6),(2,3,3),(2,4,8),(2,5,5),(3,5,7),(4,5,9)]
     l = [(1, 2, 9), (1, 3, 12), (2, 3, 8), (2, 4, 4), (2, 5, 7), (3, 5, 5), (3, 6, 2), (4, 5, 2), (4, 7, 10),
          (5, 6, 11), (5, 7, 2), (6, 8, 4), (7, 8, 4), (7, 9, 3), (8, 9, 13)]
-    b = [(1, 2, 5), (1, 3, 5), (2, 4, 5), (2, 5, 5), (3, 6, 5), (4, 7, 5), (5, 7, 5), (6, 5, 5), (6, 7, 5)]
+    #b = [(1, 2, 5), (1, 3, 5), (2, 4, 5), (2, 5, 5), (3, 6, 5), (4, 7, 5), (5, 7, 5), (6, 5, 5), (6, 7, 5)]
     # Example for bellam ford as -ve edge weight given
     # l = [(1, 2, -1), (1, 3, 4), (2, 3, 3), (2, 4, 2), (2, 5, 2), (4, 2, 1), (4, 3, 5), (5, 4, -3),(3,3,0)]
 
@@ -58,7 +60,7 @@ if __name__ == '__main__':
     
     """
     x = Create_Graph(l, directed=False)
-    x.add_edges_to_nodes(b, x.graph)
+    #x.add_edges_to_nodes(b, x.graph)
 
     visited = []
     import traversal
