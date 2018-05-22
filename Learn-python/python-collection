@@ -1,0 +1,91 @@
+List - mutable list of items
+
+#. A list is a ordered collection data types/container that is iterable, mutable and duplicates are allowed. It can be a collection of hetrogenous items.
+
+#. It's support operation in O(1) time complexity are {len(list), list.append(item), set , get}
+
+#. There are some list operations that take O(n) time complexity are 
+
+	{	
+		list.index(item), 			-	return index of item in list
+		list.insert(index, value), 	-	add value to list at given index
+		list.remove(value), 		-	remove value from list
+		list.pop()					-	remove top item from list
+		list.pop(index)				-	remove item from given index
+		list.extend(list2)			-	add the items of list2 in list
+		min(list), 					-	return smallest value element from list
+		max(list)					-	return largest value element from list
+	}
+
+----------------------------------------------------------------------------------------------------
+
+Dictionary - mutable container
+
+#. 	Some operation in dictionary take O(1) time complexity such .
+#. 	Buid in method of dictionary are
+
+	{
+
+		dict.items()		- 		return items (key,value) pair in the dictionary,
+		dict.keys() 		- 		returns keys in the dictionary, 
+		dict.values()		-		returns the values of key inthe dictionary,
+		dic.has_key(key) 	- 		return True if given key present in dictionary,
+		dict.clear() 		- 		clear all the items in the dictionary,
+		len(dict)			-		return length of dictionary 
+		del dict[key]		-		remove item from dictianary
+		dict[key] = item 	-		add item to dictionary
+		
+	}
+
+#.	Properties of Dictionary Keys
+
+	(a) More than one entry per key is not allowed. This means no duplicate key is allowed. When duplicate keys are encountered during assignment, the last assignment wins.
+
+	(b) Keys must be immutable. This means you can use strings, numbers or tuples as dictionary keys but something like ['key'] is not allowed.
+
+	(c) For dict[key] value, It can be any data type eg. Int, string, list, tuple, 
+
+----------------------------------------------------------------------------------------------------
+
+set – like a dict without values, mutable collection
+
+#. 	It is same as mathematical set and support all operations like union, intersection, and, or,  
+ 	not, subtract etc.
+
+#. 	A Set is an unordered collection data type that is iterable, mutable, and has no duplicate  
+   	elements. 
+
+   {
+	   A = set('a','b','c')
+	   B = set('c','d','e')
+
+	   A.add("item")		-	Add item to set.
+	   A.union(B)
+	   A.intersection(B)	-	Intersection between A and B
+	   A.difference(B)		-	Difference between A and B
+	   A.issubset(B)		-	check A is subset of B
+	   A.issuperset(B)		-	check A is superset of B
+	   A.isdisjoint(B)		-	check there is no common in between
+	   A.remove("item")		-	remove item from set A
+	   A.clear()			-	clear the set
+	   A and B 				-	AND operations btw sets  A,B
+	   A or B 				-	OR operations btw set A,B
+	   !A 					-	Not operation
+
+   }
+
+#.	Frozen sets are immutable sets.
+
+---------------------------------------------------------------------------------------------------
+
+tuple – the immutable list
+
+#. 	Firstly, they are hashaable. This means that you can use a tuple as a key in a dict.
+	eg. t = (1,'c', 'temp')
+		dict[t] = 'spam'
+
+#. 	Nested tuples are permissable in python.
+
+
+
+

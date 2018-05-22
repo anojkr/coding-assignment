@@ -1,4 +1,4 @@
-import tree, tree_operations, tree_traversal
+"""import tree, tree_operations, tree_traversal
 
 class AVL(tree.Binary_Search_Tree):
 		def __init__(self,data):
@@ -22,4 +22,4 @@ tree_operations.balance_factor_of_tree(x)
 
 
 
-		
+	"""	
